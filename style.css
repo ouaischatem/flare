@@ -1,0 +1,275 @@
+/* Body properties */
+body {
+    background-color: #111d29;
+}
+
+/* Import fonts */
+
+@font-face {
+    font-family: "GoogleSansBold";
+    src: url("fonts/GoogleSans-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GoogleSansMedium";
+    src: url("fonts/GoogleSans-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GoogleSansLight";
+    src: url("fonts/GoogleSans-Light.woff") format("woff");
+}
+
+/* Header */
+
+.title {
+    color: #fefefe;
+    font-family: 'GoogleSansBold', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Wrappers */
+
+.wrapper {
+    padding-top: 55px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1200px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 40px;
+}
+
+.wrapper-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+/* Price box */
+
+.price {
+    background-color: #25db4d;
+    color: white;
+    position: center;
+    padding: 9px 16px;
+    font-family: 'GoogleSansMedium', sans-serif;
+    font-size: 20px;
+}
+
+/* Item properties */
+
+.item {
+    display: flex;
+    background-color: #16232d;
+    border-radius: 15px;
+    padding-left: 25px;
+}
+
+.item-title {
+    color: #d4d8d8;
+    font-family: 'GoogleSansMedium', sans-serif;
+    font-size: 35px;
+}
+
+.item-icon {
+    padding-right: 20px;
+    padding-top: 30px;
+    width: 250px;
+}
+
+.item-legend {
+    text-align: left;
+}
+
+.item:hover {
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 75px;
+    text-align: center;
+}
+
+/* Custom button */
+
+.learn-more-button {
+    background-color: #cfecd5;
+    color: #0f1712;
+    padding: 9px 16px;
+    font-family: 'GoogleSansMedium', sans-serif;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Text properties */
+
+.grey-text {
+    color: #8c98a3;
+    font-family: 'GoogleSansLight', sans-serif;
+    font-size: 20px;
+}
+
+.footer-text {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        grid-template-columns: 600px;
+        grid-template-rows: auto;
+    }
+
+    .item {
+        display: grid;
+    }
+
+    .item-icon {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .item-legend {
+        text-align: center;
+    }
+
+    .learn-more-button {
+        margin: auto;
+        display: block;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-columns: 500px;
+        grid-template-rows: auto;
+    }
+
+    .item {
+        display: grid;
+    }
+
+    .item-icon {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .item-legend {
+        text-align: center;
+    }
+
+    .learn-more-button {
+        margin: auto;
+        display: block;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .wrapper {
+        grid-template-columns: 400px;
+        grid-template-rows: auto;
+    }
+
+    .item {
+        display: grid;
+    }
+
+    .item-icon {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .item-legend {
+        text-align: center;
+    }
+
+    .learn-more-button {
+        margin: auto;
+        display: block;
+    }
+
+    .container {
+        max-width: 620px;
+    }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b8d2be;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b8d2be;
+}
